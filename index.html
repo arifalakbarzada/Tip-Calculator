@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Simple Tip Calculator</h1>
+    </header>
+    <main>
+        <div class="calc_elems">
+            <div class="input">
+                <input type="number" id="amount" placeholder="Amount: $">
+            </div>
+            <div class="input">
+                <input type="number" id="percent" placeholder="Percent %">
+            </div>
+            <div class="input">
+                <input type="number" id="people" placeholder="Number of people:">
+            </div>
+        </div>
+
+    </main>
+    <div class="calcBtns">
+        <button id="reset" type="button">Reset</button>
+        <button type="button" id="calc">Calculate</button>
+    </div>
+    <div class="results">
+        <div>
+            <p>Amount for each person:</p>
+            <span id="perPerson"></span>
+        </div>
+
+        <div>
+            <p>Tip :</p>
+            <p id="tip"></p>
+        </div>
+        <div>
+            <p>Total amount:</p>
+            <p id="total"></p>
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
