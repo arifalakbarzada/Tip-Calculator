@@ -1,27 +1,22 @@
+:root {
+    --main-color: #00474B;
+}
+
 header {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.gap{
+    gap: 6px;
+}
 main {
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.input {
-    width: 80%;
-    padding: 10px;
-    display: flex;
-    justify-content: flex-end;
-}
-
-.input input {
-    width: 90%;
-    outline: none;
-}
 
 .calc_elems {
     display: flex;
@@ -37,6 +32,35 @@ main {
     gap: 20px;
 }
 
+
+input{
+    text-align: right;
+}
+
+
+.input{
+    margin: 10px;
+}
+
+#custom_input {
+    background: #fff;
+    border-color: #80C3BC;
+    color: var(--main-color);
+}
+
+.value {
+    width: 100% !important;
+    font-size: 40px;
+    color: #fff;
+    font-weight: bold;
+    background: var(--main-color);
+}
+
+.active {
+    background-color: #9FE8DF;
+    color: var(--main-color);
+}
+
 #calc,
 #reset {
     background: blue;
@@ -46,14 +70,3 @@ main {
     padding: 10px;
 }
 
-.results {
-    margin-top: 20px;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-}
-.results div{
-    display: flex;
-}
