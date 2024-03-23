@@ -1,28 +1,54 @@
 :root {
     --main-color: #00474B;
+    --secondary-color:#26C0AD;
 }
 
-header {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+body {
+    background-color: #C5E4E7;
 }
 
-.gap{
-    gap: 6px;
-}
 main {
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    height: 700px;
 }
 
+.main-content {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
 
 .calc_elems {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 30%;
+}
+
+.calc_elems h4 {
+    margin-bottom: 15px;
+    color: #6D8183;
+}
+
+.amount-side,
+.people-count {
+    position: relative;
+}
+
+.amount-side i,
+.people-count i {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    left: 15px;
+    color: #A9BDBE;
 }
 
 .calcBtns {
@@ -33,13 +59,31 @@ main {
 }
 
 
-input{
-    text-align: right;
+.select_percent input {
+    text-align: center;
 }
 
+.select_percent input:hover{
+    background: #9FE8DF;
+    cursor: pointer;
+}
 
-.input{
+input {
+    text-align: right;
+    color: var(--main-color);
+    font-weight: bold;
+}
+
+.input {
     margin: 10px;
+}
+.input input{
+    width: -webkit-fill-available;
+    height: 40px;
+    font-size: 28px;
+}
+#custom_input::placeholder {
+    color: var(--main-color) !important;
 }
 
 #custom_input {
@@ -50,23 +94,58 @@ input{
 
 .value {
     width: 100% !important;
-    font-size: 40px;
+    font-size: 25px;
     color: #fff;
     font-weight: bold;
     background: var(--main-color);
 }
 
 .active {
-    background-color: #9FE8DF;
+    background-color:  #26C2AD;
     color: var(--main-color);
 }
 
-#calc,
-#reset {
-    background: blue;
-    border-radius: 25px;
-    color: white;
-    border: none;
-    padding: 10px;
+
+
+
+.results {
+    background: var(--main-color);
+    border-radius: 10px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
+.text {
+    color: white;
+}
+
+.tip_amount span,
+.total span {
+    color: #4F7F84;
+}
+
+.tip_amount,
+.total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.right {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--secondary-color);
+}
+#calc,
+#reset {
+    background: var(--secondary-color);
+    border-radius: 5px;
+    color: white;
+    border: none;
+    width: -webkit-fill-available;
+    padding: 10px;
+}
