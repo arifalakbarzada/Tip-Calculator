@@ -1,6 +1,6 @@
 :root {
     --main-color: #00474B;
-    --secondary-color:#26C0AD;
+    --secondary-color: #26C0AD;
 }
 
 body {
@@ -63,7 +63,7 @@ main {
     text-align: center;
 }
 
-.select_percent input:hover{
+.select_percent input:hover {
     background: #9FE8DF;
     cursor: pointer;
 }
@@ -77,11 +77,13 @@ input {
 .input {
     margin: 10px;
 }
-.input input{
+
+.input input {
     width: -webkit-fill-available;
     height: 40px;
     font-size: 28px;
 }
+
 #custom_input::placeholder {
     color: var(--main-color) !important;
 }
@@ -101,7 +103,7 @@ input {
 }
 
 .active {
-    background-color:  #26C2AD;
+    background-color: #26C2AD;
     color: var(--main-color);
 }
 
@@ -140,6 +142,7 @@ input {
     align-items: center;
     color: var(--secondary-color);
 }
+
 #calc,
 #reset {
     background: var(--secondary-color);
