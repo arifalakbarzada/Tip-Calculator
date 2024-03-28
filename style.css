@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 :root {
     --main-color: #00474B;
     --secondary-color: #26C0AD;
@@ -5,6 +6,7 @@
 
 body {
     background-color: #C5E4E7;
+    font-family: 'Space Mono';
 }
 
 main {
@@ -16,7 +18,16 @@ main {
     padding: 20px;
     height: 700px;
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
 
+.select_percent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .main-content {
     display: flex;
     padding: 20px;
@@ -57,10 +68,15 @@ main {
     align-items: center;
     gap: 20px;
 }
-
-
+.input input{
+    padding: 10px;
+}
+.percent{
+    padding: 10px;
+}
 .select_percent input {
     text-align: center;
+    transition: .4s;
 }
 
 .select_percent input:hover {
@@ -143,12 +159,18 @@ input {
     color: var(--secondary-color);
 }
 
-#calc,
+
 #reset {
     background: var(--secondary-color);
+    font-size: 26px;
+    font-weight: bold;
     border-radius: 5px;
     color: white;
     border: none;
     width: -webkit-fill-available;
     padding: 10px;
+}
+#reset:disabled{
+    background: #0D686D;
+    color: #035C62;
 }

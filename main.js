@@ -4,7 +4,6 @@ const calculateBtn = document.querySelector("#calc");
 const tip = document.querySelector("#tip");
 const total = document.querySelector("#total");
 const btnReset = document.querySelector("#reset");
-const resetContent = document.querySelector(".reset");
 let percents = document.querySelectorAll('.value');
 const tipAmount = document.querySelector('.tip_amount .right p');
 const totalAmountPerEachPerson = document.querySelector('.total .right p');
@@ -25,6 +24,8 @@ percents.forEach(function (input) {
 function reset() {
     inputAmount.value = "";
     peopleInput.value = "";
+    totalAmountPerEachPerson.textContent  = "$0.00";
+    tipAmount.textContent = "$0.00";
     percents.forEach((item) => {
 
         if (item.classList.contains('active')) {
